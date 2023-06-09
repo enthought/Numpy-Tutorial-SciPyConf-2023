@@ -2,7 +2,7 @@
 
 #### Presented by: Sandhya Govindaraju, [Enthought, Inc.](https://www.enthought.com)
 
-This repository contains all the material needed by students registered for the Numpy tutorial of [SciPy 2023](https://www.scipy2023.scipy.org/) on Monday, July 11th 2023.
+This repository contains all the material needed by students registered for the Numpy tutorial of [SciPy 2023](https://www.scipy2023.scipy.org/) on Monday, July 10th 2023.
 
 For a smooth experience, you will need to make sure that you install or update your Python distribution and download the tutorial material _before_ the day of the tutorial.
 
