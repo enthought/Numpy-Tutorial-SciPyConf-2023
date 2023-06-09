@@ -1,4 +1,13 @@
 """
+© 2001-2022, Enthought, Inc.
+All Rights Reserved. Use only permitted under license. Copying, sharing, redistributing or other unauthorized use strictly prohibited.
+All trademarks and registered trademarks are the property of their respective owners.
+Enthought, Inc.
+200 W Cesar Chavez Suite 202
+Austin, TX 78701
+www.enthought.com
+
+
 Calc return
 ===========
 
@@ -48,3 +57,11 @@ plt.title("Daily return of the AAPL stock in 2008 (%)")
 # 3. Make the plot tighter
 plt.xlim(xmax=len(returns))
 plt.show()
+
+# Plot the zeros line with plt.axhline and ax.hlines
+# plt.plot(days, returns * 100 , 'b-')
+# plt.axhline(y=0, color='r', linestyle='-')  # x is from [0,1]
+# # ax = plt.gca()
+# # ax.hlines(y=0, color='r', linestyle='-', xmin=days.min(), xmax=days.max())  # x can be specified as data point
+# plt.title('Daily return of AAPL stock in 2008 (%)')
+# plt.xlim(xmax=len(returns));

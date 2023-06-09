@@ -1,4 +1,13 @@
 """
+© 2001-2022, Enthought, Inc.
+All Rights Reserved. Use only permitted under license. Copying, sharing, redistributing or other unauthorized use strictly prohibited.
+All trademarks and registered trademarks are the property of their respective owners.
+Enthought, Inc.
+200 W Cesar Chavez Suite 202
+Austin, TX 78701
+www.enthought.com
+
+
 Wind Statistics
 ----------------
 
@@ -65,6 +74,7 @@ These data were analyzed in detail in the following article:
    (with Discussion). Applied Statistics 38, 1-50.
 
 """
+from __future__ import print_function
 from numpy import (loadtxt, arange, searchsorted, add, zeros, unravel_index,
                    where)
 

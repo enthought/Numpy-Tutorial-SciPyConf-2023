@@ -1,4 +1,12 @@
 """
+© 2001-2022, Enthought, Inc.
+All Rights Reserved. Use only permitted under license. Copying, sharing, redistributing or other unauthorized use strictly prohibited.
+All trademarks and registered trademarks are the property of their respective owners.
+Enthought, Inc.
+200 W Cesar Chavez Suite 202
+Austin, TX 78701
+www.enthought.com
+
 
 Topics: Boolean array operators, sum function, where function, plotting.
 
@@ -31,7 +39,8 @@ Bonus
 
 """
 
-from numpy import loadtxt, sum, where
+from __future__ import print_function
+import numpy as np
 import matplotlib.pyplot as plt
 # Constants that indicate what data is held in each column of
 # the 'dow' array.
@@ -45,7 +54,7 @@ ADJ_CLOSE = 5
 # 0. The data has been loaded from a csv file for you.
 
 # 'dow' is our NumPy array that we will manipulate.
-dow = loadtxt('dow.csv', delimiter=',')
+dow = np.loadtxt('dow.csv', delimiter=',')
 
 
 # 1. Create a "mask" array that indicates which rows have a volume
@@ -53,13 +62,16 @@ dow = loadtxt('dow.csv', delimiter=',')
 high_volume_mask = dow[:, VOLUME] > 5.5e9
 
 # 2. How many are there?  (hint: use sum).
-high_volume_days = sum(high_volume_mask)
-print("The dow volume has been above 5.5 billion on"
-      " {} days this year.".format(high_volume_days))
+high_volume_days = np.sum(high_volume_mask)
+print("The dow volume has been above 5.5 billion on" \
+      " %d days this year." % high_volume_days)
 
 # 3. Find the index of every row (or day) where the volume is greater
 #    than 5.5 billion. hint: look at the where() command.
-high_vol_index = where(high_volume_mask)[0]
+high_vol_index = np.where(high_volume_mask)[0]
+# high_vol_index2 = np.nonzero(high_volume_mask)[0]
+# np.array_equal(high_vol_index, high_vol_index2)
+
 
 # BONUS:
 # 1. Plot the adjusted close for EVERY day in 2008.
