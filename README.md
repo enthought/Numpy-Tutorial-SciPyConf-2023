@@ -79,6 +79,12 @@ git clone https://github.com/enthought/Numpy-Tutorial-SciPyConf-2023.git
 
 The above command will create a new folder named `Numpy-Tutorial-SciPyConf-2023/` with all the content you will need: the slides I will go through (`introduction_to_numerical_computing_with_numpy_manual.pdf`), and a folder of exercises.
 
+## Updates
+
+Please let me know how the tutorial went in [survey]( https://airtable.com/shrzG14g2XdWtt0hC?prefill_Class%20Code=SciPy-2023-Tutorial&hide_Class%20Code=true).
+
+All the code that was demoed in the class is saved to `history/`
+
 ## Questions? Problems?
 
 You may post messages to the `#tutorial-intro-to-numerical-computing-with-numpy` Slack channel for this tutorial at in the official Slack team: [https://scipy2023.slack.com](https://scipy2023.slack.com) .
